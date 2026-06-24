@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#18e8ff"/><stop offset=".55" stop-color="#2563eb"/><stop offset="1" stop-color="#43f7b6"/></linearGradient>
+    <radialGradient id="soft" cx="50%" cy="45%" r="65%"><stop offset="0" stop-color="#ffffff" stop-opacity=".92"/><stop offset=".48" stop-color="#ffffff" stop-opacity=".38"/><stop offset="1" stop-color="#ffffff" stop-opacity=".04"/></radialGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffb7d"/><stop offset="1" stop-color="#ff4ecd"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="16" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="760" height="520" rx="44" fill="url(#bg)"/>
+  <g opacity=".18"><path d="M0 95 H760 M0 195 H760 M0 295 H760 M0 395 H760 M130 0 V520 M260 0 V520 M390 0 V520 M520 0 V520 M650 0 V520" stroke="#fff" stroke-width="2"/></g>
+  <circle cx="650" cy="80" r="92" fill="#fff" opacity=".14"/><circle cx="112" cy="410" r="122" fill="#fff" opacity=".10"/>
+  <g filter="url(#glow)">
+        <path d="M190 155 C260 90 350 115 420 70 C495 24 575 70 602 138 C625 195 585 238 516 250 C455 260 421 316 352 313 C287 309 257 262 205 254 C149 245 139 204 190 155Z" fill="url(#soft)" opacity=".88"/>
+        <path d="M230 210 C300 170 365 210 430 175 C490 142 545 160 580 205" fill="none" stroke="#fff" stroke-opacity=".72" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="308" cy="189" r="14" fill="#fff"/><circle cx="506" cy="176" r="14" fill="#fff"/><circle cx="410" cy="242" r="14" fill="#fff"/>
+        </g>
+</svg>
