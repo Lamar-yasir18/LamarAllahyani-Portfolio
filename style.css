@@ -805,3 +805,15 @@ img[alt*="Stance"]{
     margin-top: 10px !important;
   }
 }
+.chocolate-image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.chocolate-image img{
+    width:80%;
+    height:auto;
+    object-fit:contain;
+}
