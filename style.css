@@ -905,3 +905,44 @@ img[alt*="Stance"]{
     grid-template-columns:1fr;
   }
 }
+.cert-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+}
+
+.cert-card{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  padding:22px;
+  border-radius:26px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.10);
+  backdrop-filter:blur(18px);
+}
+
+.cert-card img{
+  width:58px;
+  height:58px;
+  object-fit:contain;
+  padding:10px;
+  border-radius:18px;
+  background:rgba(255,255,255,.08);
+}
+
+.cert-card h3{
+  margin:0 0 6px;
+  font-size:1rem;
+}
+
+.cert-card span{
+  color:#aab3d6;
+  font-size:.88rem;
+}
+
+@media(max-width:700px){
+  .cert-grid{
+    grid-template-columns:1fr;
+  }
+}
