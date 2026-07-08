@@ -810,3 +810,34 @@ img[alt*="Stance"]{
   align-items: center;
   gap: 8px;
 }
+.education-achievements{
+    display:flex;
+    gap:12px;
+    margin-top:18px;
+    flex-wrap:wrap;
+}
+
+.achievement-badge{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px 14px;
+    border-radius:12px;
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+.achievement-badge:hover{
+    transform:translateY(-2px);
+}
+
+.achievement-badge i{
+    color:#8b5cf6;
+    font-size:1rem;
+}
+
+.achievement-badge span{
+    font-size:.9rem;
+    font-weight:600;
+}
