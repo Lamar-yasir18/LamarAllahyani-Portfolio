@@ -805,3 +805,8 @@ img[alt*="Stance"]{
     margin-top: 10px !important;
   }
 }
+.actions .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
