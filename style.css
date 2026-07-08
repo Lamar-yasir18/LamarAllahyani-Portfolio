@@ -810,34 +810,48 @@ img[alt*="Stance"]{
   align-items: center;
   gap: 8px;
 }
-.education-achievements{
+.academic-highlight{
+    margin-top:20px;
+    padding:20px;
+    border-radius:18px;
+    background:linear-gradient(
+        135deg,
+        rgba(139,92,246,.15),
+        rgba(59,130,246,.10)
+    );
+    border:1px solid rgba(139,92,246,.25);
+
     display:flex;
-    gap:12px;
-    margin-top:18px;
-    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-between;
 }
 
-.achievement-badge{
+.score-number{
+    font-size:2rem;
+    font-weight:800;
+    line-height:1;
+}
+
+.score-label{
+    margin-top:4px;
+    font-size:.85rem;
+    opacity:.8;
+}
+
+.academic-divider{
+    width:1px;
+    height:50px;
+    background:rgba(255,255,255,.15);
+}
+
+.academic-honor{
     display:flex;
     align-items:center;
     gap:10px;
-    padding:10px 14px;
-    border-radius:12px;
-    background:rgba(255,255,255,.04);
-    border:1px solid rgba(255,255,255,.08);
-    transition:.3s;
-}
-
-.achievement-badge:hover{
-    transform:translateY(-2px);
-}
-
-.achievement-badge i{
-    color:#8b5cf6;
-    font-size:1rem;
-}
-
-.achievement-badge span{
-    font-size:.9rem;
     font-weight:600;
+}
+
+.academic-honor i{
+    color:#fbbf24;
+    font-size:1.2rem;
 }
