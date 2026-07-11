@@ -946,3 +946,71 @@ img[alt*="Stance"]{
     grid-template-columns:1fr;
   }
 }
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:22px;
+    margin-top:50px;
+}
+
+.contact-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+    padding:28px;
+
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    text-decoration:none;
+    color:white;
+
+    transition:.35s ease;
+}
+
+.contact-card:hover{
+    transform:translateY(-5px);
+    border-color:#7c5cff;
+    box-shadow:0 0 30px rgba(124,92,255,.15);
+}
+
+.contact-icon{
+    width:70px;
+    height:70px;
+
+    border-radius:18px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(255,255,255,.05);
+}
+
+.contact-icon i{
+    font-size:2rem;
+    color:#18e8ff;
+}
+
+.contact-content h3{
+    margin:0;
+    font-size:1.15rem;
+    font-weight:700;
+}
+
+.contact-content p{
+    margin-top:8px;
+    color:#aab3d6;
+    font-size:.95rem;
+}
+
+@media(max-width:768px){
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+}
