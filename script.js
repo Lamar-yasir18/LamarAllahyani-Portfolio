@@ -36,6 +36,7 @@ const translations = {
   "Contact": "التواصل",
 
   /* Hero */
+  "Lamar Yasir Allahyani": "لمار ياسر اللحياني",
   "Data Scientist • Data Analyst • Business Analyst":
     "عالمة بيانات • محللة بيانات • محللة أعمال",
 
