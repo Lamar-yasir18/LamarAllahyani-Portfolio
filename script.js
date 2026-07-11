@@ -71,11 +71,11 @@ const translations = {
   "Hello, I’m Lamar Yasir Allahyani":
     "مرحبًا، أنا لمار ياسر اللحياني",
 
-  "I am a Data Science graduate from Umm Al-Qura University in Makkah & Jeddah, Saudi Arabia. I’m passionate about the full data lifecycle: collection, preprocessing, modeling, visualization, and communicating insights.":
+  "I am a Data Science graduate from Umm Al-Qura University. I’m passionate about the full data lifecycle: collection, preprocessing, modeling, visualization, and communicating insights.":
     "خريجة علم بيانات من جامعة أم القرى في مكة المكرمة وجدة. أهتم بدورة حياة البيانات كاملة، بدءًا من جمعها ومعالجتها، مرورًا بالنمذجة والتصور، وصولًا إلى عرض النتائج والرؤى بوضوح.",
 
   "My interests include data analytics, business intelligence, machine learning, Power BI, SQL, and building data solutions that help teams make real decisions.":
-    "تشمل اهتماماتي تحليل البيانات وذكاء الأعمال وتعلم الآلة وPower BI وSQL، وبناء حلول بيانات تساعد الفرق على اتخاذ قرارات أكثر فاعلية.",
+    "تشمل اهتماماتي تحليل البيانات وذكاء الأعمال وتعلم الآلة و Power BI و SQL، وبناء حلول بيانات تساعد الفرق على اتخاذ قرارات أكثر فاعلية.",
 
   /* Education */
   "Bachelor’s Degree in Data Science":
