@@ -810,50 +810,75 @@ img[alt*="Stance"]{
   align-items: center;
   gap: 8px;
 }
-.academic-highlight{
-    margin-top:20px;
-    padding:20px;
-    border-radius:18px;
-    background:linear-gradient(
-        135deg,
-        rgba(139,92,246,.15),
-        rgba(59,130,246,.10)
-    );
-    border:1px solid rgba(139,92,246,.25);
+@media (max-width: 600px){
 
-    display:flex;
+  .academic-highlight{
+    width:100%;
+    box-sizing:border-box;
+
+    display:grid;
+    grid-template-columns:minmax(105px, .85fr) 1px minmax(150px, 1.25fr);
     align-items:center;
-    justify-content:space-between;
-}
 
-.score-number{
-    font-size:2rem;
-    font-weight:800;
+    gap:12px;
+    padding:18px 16px;
+  }
+
+  .academic-score{
+    min-width:0;
+    text-align:left;
+  }
+
+  .score-number{
+    font-size:2.1rem;
     line-height:1;
-}
+    white-space:nowrap;
+  }
 
-.score-label{
-    margin-top:4px;
-    font-size:.85rem;
-    opacity:.8;
-}
+  .score-label{
+    font-size:.88rem;
+    line-height:1.35;
+    margin-top:8px;
+  }
 
-.academic-divider{
+  .academic-divider{
     width:1px;
-    height:50px;
-    background:rgba(255,255,255,.15);
-}
+    height:72px;
+    justify-self:center;
+  }
 
-.academic-honor{
+  .academic-honor{
+    min-width:0;
     display:flex;
+    flex-direction:row;
     align-items:center;
+    justify-content:flex-start;
     gap:10px;
-    font-weight:600;
-}
+    text-align:left;
+  }
 
-.academic-honor i{
-    color:#fbbf24;
-    font-size:1.2rem;
+  .academic-honor i{
+    flex-shrink:0;
+    font-size:1.45rem;
+  }
+
+  .academic-honor span{
+    font-size:.92rem;
+    line-height:1.45;
+    white-space:normal;
+    overflow-wrap:normal;
+    word-break:normal;
+  }
+
+  html[dir="rtl"] .academic-score{
+    text-align:right;
+  }
+
+  html[dir="rtl"] .academic-honor{
+    flex-direction:row;
+    justify-content:flex-start;
+    text-align:right;
+  }
 }
 .skills-grid{
   display:grid;
@@ -1126,4 +1151,48 @@ html[dir="rtl"] .contact-icon {
     width: fit-content;
     margin-top: 8px;
   }
+}
+/* ===== Hero Stats Cards ===== */
+
+.quick-facts{
+    width:min(950px, calc(100% - 40px));
+    margin:55px auto 0;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.fact-card{
+    min-height:140px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    padding:22px;
+    border-radius:24px;
+}
+
+.fact-card strong{
+    display:block;
+    margin:10px 0 6px;
+}
+
+.fact-card p{
+    margin:0;
+}
+
+@media (max-width:768px){
+
+    .quick-facts{
+        grid-template-columns:1fr;
+        gap:14px;
+        margin-top:35px;
+    }
+
+    .fact-card{
+        min-height:110px;
+    }
+
 }
