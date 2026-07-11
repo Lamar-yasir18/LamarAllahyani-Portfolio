@@ -812,72 +812,118 @@ img[alt*="Stance"]{
 }
 @media (max-width: 600px){
 
+  /* ===== Education GPA Highlight ===== */
+
+.academic-highlight{
+  width:100%;
+  box-sizing:border-box;
+  margin-top:20px;
+  padding:24px 28px;
+
+  display:grid;
+  grid-template-columns:1fr 1px 1fr;
+  align-items:center;
+  gap:26px;
+
+  border-radius:20px;
+  background:linear-gradient(
+    135deg,
+    rgba(110, 80, 210, .22),
+    rgba(30, 190, 220, .08)
+  );
+  border:1px solid rgba(140, 100, 255, .35);
+}
+
+.academic-score{
+  min-width:0;
+  text-align:center;
+}
+
+.score-number{
+  margin:0;
+  font-size:2.8rem;
+  font-weight:800;
+  line-height:1;
+  white-space:nowrap;
+}
+
+.score-label{
+  margin-top:8px;
+  font-size:.95rem;
+  line-height:1.35;
+  color:rgba(255,255,255,.78);
+}
+
+.academic-divider{
+  width:1px;
+  height:64px;
+  background:rgba(255,255,255,.18);
+  justify-self:center;
+}
+
+.academic-honor{
+  min-width:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  text-align:center;
+}
+
+.academic-honor i{
+  flex-shrink:0;
+  font-size:1.55rem;
+  color:#ffc928;
+}
+
+.academic-honor span{
+  font-size:1rem;
+  font-weight:800;
+  line-height:1.35;
+  letter-spacing:.03em;
+  color:#ff4fd8;
+}
+
+/* Arabic direction */
+html[dir="rtl"] .academic-highlight{
+  direction:rtl;
+}
+
+/* Mobile — preserve the exact horizontal structure */
+@media (max-width:600px){
+
   .academic-highlight{
-    width:100%;
-    box-sizing:border-box;
-
-    display:grid;
-    grid-template-columns:minmax(105px, .85fr) 1px minmax(150px, 1.25fr);
-    align-items:center;
-
-    gap:12px;
-    padding:18px 16px;
-  }
-
-  .academic-score{
-    min-width:0;
-    text-align:left;
+    padding:20px 16px;
+    grid-template-columns:minmax(110px,.9fr) 1px minmax(170px,1.3fr);
+    gap:14px;
   }
 
   .score-number{
-    font-size:2.1rem;
-    line-height:1;
-    white-space:nowrap;
+    font-size:2.25rem;
   }
 
   .score-label{
     font-size:.88rem;
-    line-height:1.35;
-    margin-top:8px;
   }
 
   .academic-divider{
-    width:1px;
-    height:72px;
-    justify-self:center;
+    height:70px;
   }
 
   .academic-honor{
-    min-width:0;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:flex-start;
-    gap:10px;
-    text-align:left;
+    gap:9px;
   }
 
   .academic-honor i{
-    flex-shrink:0;
-    font-size:1.45rem;
+    font-size:1.35rem;
   }
 
   .academic-honor span{
     font-size:.92rem;
     line-height:1.45;
     white-space:normal;
-    overflow-wrap:normal;
     word-break:normal;
-  }
-
-  html[dir="rtl"] .academic-score{
-    text-align:right;
-  }
-
-  html[dir="rtl"] .academic-honor{
-    flex-direction:row;
-    justify-content:flex-start;
-    text-align:right;
+    overflow-wrap:normal;
   }
 }
 .skills-grid{
