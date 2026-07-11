@@ -78,7 +78,7 @@ const translations = {
     "تشمل اهتماماتي تحليل البيانات وذكاء الأعمال وتعلم الآلة و Power BI و SQL، وبناء حلول بيانات تساعد الفرق على اتخاذ قرارات أكثر فاعلية.",
 
   /* Education */
-  "Bachelor’s Degree in Data Science":
+  "Bachelor of Data Science":
     "بكالوريوس علم البيانات",
 
   "Bachelor's Degree in Data Science":
