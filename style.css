@@ -1174,3 +1174,29 @@ html[dir="rtl"] .contact-grid .contact-card { direction: rtl; text-align: right;
   }
   .fact-card { min-height: 110px; }
 }
+.top-actions{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.lang-pill{
+    height:58px;
+    padding:0 18px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.08);
+
+    color:white;
+    font-size:.9rem;
+    font-weight:700;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+.lang-pill:hover{
+    border-color:#18e8ff;
+}
