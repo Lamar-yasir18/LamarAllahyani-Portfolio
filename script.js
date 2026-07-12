@@ -309,8 +309,7 @@ function collectTranslatableText() {
 
 function applyLanguage(language) {
   const isArabic = language === "ar";
-  langToggle.textContent =
-  isArabic ? "EN" : "عربي";
+ 
   document.documentElement.lang = isArabic ? "ar" : "en";
   document.documentElement.dir = isArabic ? "rtl" : "ltr";
 
